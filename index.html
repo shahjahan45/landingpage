@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--========== Favicon ==========-->
+    <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
+
+
+
+.faq {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.centerplease {
+  text-align:center;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.question {
+  color:#fff;
+  font-weight: normal;
+  position: relative;
+  background: #18b39e;
+  margin: 0 auto;
+  opacity: .9;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  cursor: pointer;
+  
+}
+
+.answers {
+  border-top: 1px solid #2a4163;
+  background: white;
+  padding: 0px 15px;
+  margin: 0 0 7px 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 1.8em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.questions {
+  display: none;
+}
+    </style>
+
+    <title>iDriver Mobility services</title>
+</head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo"><img src="assets/img/logo.png" alt="iDriver Technology Logo"></a>
+        
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Vehicle Category</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                        <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+        
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">iDriver Technology</h1>
+                        <h2 class="home__subtitle">Discover the ultimate ride experience with 
+                                                    iDriver! Get ready to elevate 
+                                                    your journey with our top-rated drivers</h2>
+                        <a href="https://wa.me/+97471309578" target="_blank" class="button">Click To Cutomer Support</a>
+                    </div>
+    
+                    <img src="assets/img/home.jpeg" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial ">About us</span>
+                        <h2 class="section-title about__initial section-subtitle">We Provide Best <br> Transportation Services.</h2>
+                        <p class="about__description">Experience Added Benefits When You Ride with iDriver and Enjoy Our Exceptional Service.</p>
+                        <a href="#" class="button">Explore history</a>
+                    </div>
+
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <!-- <span class="section-subtitle">Offering</span> -->
+                <h2 class="section-title section-subtitle" >Our amazing services</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img class="services__img" src="assets/img/hello.png" alt="Business Travel">
+                        <h3 class="services__title">Business Travel</h3>
+                        <p class="services__description">For years, we've delivered top-notch services. Our restaurant is known for its delectable cuisine, making us a favorite in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img class="services__img" src="assets/img/courtesy.jpg" alt="Business Travel">
+                        <h3 class="services__title">Courtesy transport</h3>
+                        <p class="services__description">Courtesy transport is a free transportation service provided by a business or organization as a gesture of goodwill. It offers customers or guests convenient
+                             transportation to their destination without any additional cost.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img class="services__img" src="assets/img/24.png" alt="Business Travel">
+                        <h3 class="services__title">24-hour support service</h3>
+                        <p class="services__description">24-hour support service provides assistance and help around the clock,
+                             ensuring that support is accessible whenever you need it, day or night.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <!-- <span class="section-subtitle">Special</span> -->
+                <h2 class="section-title section-subtitle"">Vehicle Category</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/sedan.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Sedan 4 Seater</h3>
+                        <span class="menu__detail">Comfortable ride for small groups</span>
+                        <span class="menu__preci">Starting Base Fare: 6 QAR</span><br>
+                       
+                        <a href="#" class="button menu__button">Book Now</a>
+                    </div>
+                    
+
+                    <div class="menu__content">
+                        <img src="assets/img/7seater.png" alt="" class="menu__img">
+                        <h3 class="menu__name">7 Seater</h3>
+                        <span class="menu__detail">Spacious ride for groups or families</span>
+                        <span class="menu__preci">Starting Base Fare: 8 QAR</span><br>
+                        
+                        <a href="#" class="button menu__button">Book Now</a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/7seatercomfort.png" alt="" class="menu__img">
+                        <h3 class="menu__name">7 Seater Comfort</h3>
+                        <span class="menu__detail">Luxurious and spacious ride for maximum comfort</span>
+                        <span class="menu__preci">Starting Base Fare: 16 QAR</span><br>
+                        <a href="#" class="button menu__button">Book Now</a>
+                    </div>
+                </div>
+            </section><br><br>
+
+            <!--===== FAQ=======-->
+
+            <section class=" bd-container" id="faq">
+                <h2 class="section-title section-subtitle">FAQ's</h2>
+
+                    
+                      <br>
+                      
+                        <div class="faq">
+                            <div>
+                              <input type="checkbox" id="question4" name="q" class="questions">
+                              <div class="plus">+</div>
+                              <label for="question4" class="question">
+                                How do I book a ride?
+                              </label>
+                              <div class="answers">
+                                To book a ride, simply open the app, enter your pickup and drop-off locations, select your ride option, and confirm your booking.
+                              </div>
+                            </div>
+                            
+                            <div>
+                              <input type="checkbox" id="question5" name="q" class="questions">
+                              <div class="plus">+</div>
+                              <label for="question5" class="question">
+                                Can I schedule a ride in advance?
+                              </label>
+                              <div class="answers">
+                                Yes, you can schedule a ride in advance by selecting the "Schedule Ride" option in the app and choosing your desired pickup time and date.
+                              </div>
+                            </div>
+                              
+                            <div>
+                              <input type="checkbox" id="question6" name="q" class="questions">
+                              <div class="plus">+</div>
+                              <label for="question6" class="question">
+                                How do I pay for my ride?
+                              </label>
+                              <div class="answers">
+                                You can pay for your ride using various payment methods supported by the app, including credit/debit cards, digital wallets, or cash.
+                              </div>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="question7" name="q" class="questions">
+                                <div class="plus">+</div>
+                                <label for="question7" class="question">
+                                  Is it possible to request multiple stops during a ride?
+                                </label>
+                                <div class="answers">
+                                  Yes, you can add multiple stops to your ride by selecting the "Add Stop" option in the app and entering the additional locations.
+                                </div>
+                              </div>
+                              
+                              <div>
+                                <input type="checkbox" id="question8" name="q" class="questions">
+                                <div class="plus">+</div>
+                                <label for="question8" class="question">
+                                  How do I track my ride?
+                                </label>
+                                <div class="answers">
+                                  You can track your ride in real-time using the app's built-in GPS tracking feature. Simply open the app and view the map to see your driver's location.
+                                </div>
+                              </div>
+                              
+                              <div>
+                                <input type="checkbox" id="question9" name="q" class="questions">
+                                <div class="plus">+</div>
+                                <label for="question9" class="question">
+                                  What happens if my driver cancels the ride?
+                                </label>
+                                <div class="answers">
+                                  If your driver cancels the ride, you will be automatically matched with another available driver, and your ride request will be rescheduled.
+                                </div>
+                              </div>
+                              
+                              <div>
+                                <input type="checkbox" id="question10" name="q" class="questions">
+                                <div class="plus">+</div>
+                                <label for="question10" class="question">
+                                  Can I rate my driver after the ride?
+                                </label>
+                                <div class="answers">
+                                  Yes, you can rate your driver and provide feedback after completing your ride. Your feedback helps us improve our service.
+                                </div>
+                              </div>
+                              
+                              <div>
+                                <input type="checkbox" id="question11" name="q" class="questions">
+                                <div class="plus">+</div>
+                                <label for="question11" class="question">
+                                  How do I contact customer support?
+                                </label>
+                                <div class="answers">
+                                  You can contact our customer support team via the app's help section or by calling our customer support hotline.
+                                </div>
+                              </div>
+                              
+                              <div>
+                                <input type="checkbox" id="question12" name="q" class="questions">
+                                <div class="plus">+</div>
+                                <label for="question12" class="question">
+                                  Can I request a specific type of vehicle?
+                                </label>
+                                <div class="answers">
+                                  Yes, you can choose your preferred vehicle type (e.g., sedan, SUV, van) when booking your ride.
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                
+
+            </section>
+
+            <!--===== APP =======-->
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial">Mobile Application for Customer</span>
+                        <h2 class="section-title app__initial section-subtitle">App is aviable</h2>
+                        <p class="app__description"> Explore our ride-sharing app for quick reservations, 
+                                                    food orders, live delivery tracking, and more. Download now!</p>
+                        <div class="app__stores">
+                            <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
+                            <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                        </div>
+                    </div>
+
+                    <img src="assets/img/movil-app.jpeg" alt="" class="app__img">
+                </div>
+            </section>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description"> If you wish to book a ride with iDriver Mobility Services, simply reach out to us, and we'll assist you promptly through our 24/7 chat service.</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="https://wa.me/+97471309578" target="_blank" class="button">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <img src="assets/img/logo.png" alt="Company Logo">
+                    <a href="#" class="footer__logo">iDriver Technology Mobility Services</a>
+                    
+                    <!-- <span class="footer__description"></span> -->
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100063491145934" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Ride sharing</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Best fair</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Address 1</h3>
+                    <ul>
+                        <li>IDRIVER TECHNOLOGY FOR MOBILITY SERVICES LTD</li><br>
+                        <li>Street Number : 204</li>
+                        <li>Building : 158</li>
+                        <li>Salwa Road, Doha, Qatar</li>
+                        <li>Telephone : 33359091</li>
+                        <li><a href="mailto:idriverqatar@gmail.com">idriverqatar@gmail.com</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Address 2</h3>
+                    <ul>
+                        <li>IDRIVER TECHNOLOGY FOR MOBILITY SERVICES LTD</li>
+                        <br>
+                        <li>Register ID - 15181651 </li>
+                        <li>128 City Road, London, United Kingdom, EC1V 2NX</li>
+                        <li>Mobile : +447876857672</li>
+                        <li><a href="mailto:ceo@idriver.world">ceo@idriver.world</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">iDriver Technology &#169; 2024 All rights reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
