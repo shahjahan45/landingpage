@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--========== Favicon ==========-->
+    <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg">
+
+    <style>
+       
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
+
+
+
+            .faq {
+            width: 80%;
+            margin: 0 auto;
+            }
+
+            .centerplease {
+            text-align:center;
+            margin: 0 auto;
+            font-size: 40px;
+            }
+
+            .question {
+            color:#fff;
+            font-weight: normal;
+            position: relative;
+            background: #18b39e;
+            margin: 0 auto;
+            opacity: .9;
+            padding: 10px 10px 10px 50px;
+            display: block;
+            cursor: pointer;
+            
+            }
+
+            .answers {
+            border-top: 1px solid #2a4163;
+            background: white;
+            padding: 0px 15px;
+            margin: 0 0 7px 0;
+            height: 0;
+            overflow: hidden;
+            z-index: -1;
+            position: relative;
+            opacity: 0;
+            -webkit-transition: .7s ease;
+            -moz-transition: .7s ease;
+            -o-transition: .7s ease;
+            transition: .7s ease;
+            }
+
+            .questions:checked ~ .answers{
+            height: auto;
+            opacity: 1;
+            padding: 15px;
+            }
+
+            .plus {
+            position: absolute;
+            margin-left: 10px;
+            z-index: 5;
+            font-size: 1.8em;
+            line-height: 100%;
+            -webkit-user-select: none;    
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            -webkit-transition: .3s ease;
+            -moz-transition: .3s ease;
+            -o-transition: .3s ease;
+            transition: .3s ease;
+            }
+
+            .questions:checked ~ .plus {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            }
+
+            .questions {
+            display: none;
+            }
+    </style>
+    
+
+    <title>خدمات النقل لـ تقنية iDriver</title>
+    <Script>
+        function changeLanguage(lang) {
+      // Store selected language preference (optional)
+      // Here you can use cookies or local storage to remember the selected language
+      
+      // Redirect to the corresponding language-specific page or trigger translation logic
+      if (lang === 'ar') {
+          // Redirect to Arabic version of the website or trigger translation
+          // For demonstration, we'll use a placeholder URL
+          window.location.href = "arabic-version.html";
+      } else {
+          // Redirect to English version of the website or trigger translation
+          // For demonstration, we'll use a placeholder URL
+          window.location.href = "english-version.html";
+      }
+  }
+      </Script>
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo"><img src="assets/img/logo.png" alt="شعار تقنية iDriver"></a>
+    
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">الرئيسية</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">معلومات عنا</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">الخدمات</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">فئات السيارات</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">اتصل بنا</a></li>
+                    <li class="nav__item"><a href="#faq" class="nav__link">الأسئلة الشائعة</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link" onclick="changeLanguage('en')">English</a></li>
+                    <li class="nav__item"><a href="indexarabic.html" class="nav__link" onclick="changeLanguage('ar')">العربية<</a></li>
+                    <li class="nav__item"><a href="driver-page.html" class="btn btn-info">Become a Driver</a></li>
+                    <!-- Language Selection Dropdown --><br>
+                    
+                    
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+    
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">تقنية iDriver</h1>
+                    <h2 class="home__subtitle">اكتشف تجربة الركوب النهائية مع iDriver! استعد لرفع تجربتك معنا إلى مستوى جديد مع سائقينا ذوي التقييم العالي</h2>
+                    <a href="https://wa.me/+97471309578" target="_blank" class="button">انقر لدعم العملاء</a>
+                </div>
+
+                <img src="assets/img/home.jpeg" alt="" class="home__img">
+            </div>
+        </section>
+        
+        <!--========== ABOUT ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial ">معلومات عنا</span>
+                    <h2 class="section-title about__initial section-subtitle">نحن نقدم أفضل خدمات النقل.</h2>
+                    <p class="about__description">استمتع بالفوائد الإضافية عند ركوبك مع iDriver واستمتع بخدمتنا الاستثنائية.</p>
+                    <a href="#" class="button">استكشف التاريخ</a>
+                </div>
+
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--========== SERVICES ==========-->
+        <section class="services section bd-container" id="services">
+            <h2 class="section-title section-subtitle" >خدماتنا المذهلة</h2>
+
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+                    <img class="services__img" src="assets/img/hello.png" alt="رحلات الأعمال">
+                    <h3 class="services__title">رحلات الأعمال</h3>
+                    <p class="services__description">لسنوات، قدمنا خدمات ممتازة. يُعرف مطعمنا بمأكولاته الشهية، مما يجعلنا من المفضلين في المدينة.</p>
+                </div>
+
+                <div class="services__content">
+                    <img class="services__img" src="assets/img/courtesy.jpg" alt="خدمة النقل المجانية">
+                    <h3 class="services__title">خدمة النقل المجانية</h3>
+                    <p class="services__description">خدمة النقل المجانية هي خدمة نقل مجانية تقدمها شركة أو منظمة كإيمان بالعمل الخيري. توفر للعملاء أو الضيوف وسيلة نقل مريحة إلى وجهتهم بدون أي تكلفة إضافية.</p>
+                </div>
+
+                <div class="services__content">
+                    <img class="services__img" src="assets/img/24.png" alt="خدمة الدعم على مدار الساعة">
+                    <h3 class="services__title">خدمة الدعم على مدار الساعة</h3>
+                    <p class="services__description">توفر خدمة الدعم على مدار الساعة المساعدة والمساعدة على مدار الساعة، مما يضمن توفر الدعم في أي وقت تحتاج فيه، سواء كان نهارًا أو ليلاً.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--========== MENU ==========-->
+        <section class="menu section bd-container" id="menu">
+            <h2 class="section-title section-subtitle"">فئات السيارات</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="assets/img/sedan.png" alt="" class="menu__img">
+                    <h3 class="menu__name">سيارة صالون 4 مقاعد</h3>
+                    <span class="menu__detail">رحلة مريحة للمجموعات الصغيرة</span>
+                    <span class="menu__preci">السعر الأساسي البدء: 6 ريال قطري</span><br>
+                   
+                    <a href="#" class="button menu__button">احجز الآن</a>
+                </div>
+                
+
+                <div class="menu__content">
+                    <img src="assets/img/7seater.png" alt="" class="menu__img">
+                    <h3 class="menu__name">7 مقاعد</h3>
+                    <span class="menu__detail">رحلة واسعة للمجموعات أو العائلات</span>
+                    <span class="menu__preci">السعر الأساسي البدء: 8 ريال قطري</span><br>
+                    
+                    <a href="#" class="button menu__button">احجز الآن</a>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/7seatercomfort.png" alt="" class="menu__img">
+                    <h3 class="menu__name">راحة 7 مقاعد</h3>
+                    <span class="menu__detail">رحلة فخمة وواسعة لأقصى قدر من الراحة</span>
+                    <span class="menu__preci">السعر الأساسي البدء: 16 ريال قطري</span><br>
+                    <a href="#" class="button menu__button">احجز الآن</a>
+                </div>
+            </div>
+        </section><br><br>
+
+        <!--===== FAQ=======-->
+
+        <section class=" bd-container" id="faq">
+            <h2 class="section-title section-subtitle">الأسئلة الشائعة</h2>
+
+                
+                  <br>
+                  
+                  <div class="faq">
+                    <div>
+                      <input type="checkbox" id="question4" name="q" class="questions">
+                      <div class="plus">+</div>
+                      <label for="question4" class="question">
+                        كيف يمكنني حجز رحلة؟
+                      </label>
+                      <div class="answers">
+                        لحجز رحلة، ببساطة افتح التطبيق، وأدخل مواقع الالتقاط والإنزال الخاصة بك، واختر خيار الرحلة الخاصة بك، وقم بتأكيد الحجز الخاص بك.
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <input type="checkbox" id="question5" name="q" class="questions">
+                      <div class="plus">+</div>
+                      <label for="question5" class="question">
+                        هل يمكنني جدولة رحلة مسبقًا؟
+                      </label>
+                      <div class="answers">
+                        نعم، يمكنك جدولة رحلة مسبقًا عن طريق تحديد خيار "جدولة الرحلة" في التطبيق واختيار الوقت والتاريخ المفضلين لالتقاطك.
+                      </div>
+                    </div>
+                      
+                    <div>
+                      <input type="checkbox" id="question6" name="q" class="questions">
+                      <div class="plus">+</div>
+                      <label for="question6" class="question">
+                        كيف يمكنني دفع ثمن الرحلة؟
+                      </label>
+                      <div class="answers">
+                        يمكنك دفع ثمن رحلتك باستخدام وسائل الدفع المختلفة المدعومة من التطبيق، بما في ذلك البطاقات الائتمانية/الخصم، المحافظ الرقمية، أو النقد.
+                      </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="question7" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question7" class="question">
+                          هل من الممكن طلب توقفات متعددة أثناء الرحلة؟
+                        </label>
+                        <div class="answers">
+                          نعم، يمكنك إضافة توقفات متعددة إلى رحلتك عن طريق تحديد خيار "إضافة توقف" في التطبيق وإدخال المواقع الإضافية.
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" id="question8" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question8" class="question">
+                          كيف يمكنني تتبع رحلتي؟
+                        </label>
+                        <div class="answers">
+                          يمكنك تتبع رحلتك في الوقت الحقيقي باستخدام ميزة تتبع نظام تحديد المواقع العالمي (GPS) المدمجة في التطبيق. ما عليك سوى فتح التطبيق وعرض الخريطة لرؤية موقع سائقك.
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" id="question9" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question9" class="question">
+                          ماذا يحدث إذا قام السائق بإلغاء الرحلة؟
+                        </label>
+                        <div class="answers">
+                          إذا قام السائق بإلغاء الرحلة، ستتم مطابقتك تلقائيًا مع سائق آخر متاح، وسيتم إعادة جدولة طلب الرحلة الخاص بك.
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" id="question10" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question10" class="question">
+                          هل يمكنني تقييم سائقي بعد الرحلة؟
+                        </label>
+                        <div class="answers">
+                          نعم، يمكنك تقييم السائق الخاص بك وتقديم ملاحظات بعد إكمال رحلتك. تساعدنا ملاحظاتك في تحسين خدمتنا.
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" id="question11" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question11" class="question">
+                          كيف يمكنني الاتصال بخدمة العملاء؟
+                        </label>
+                        <div class="answers">
+                          يمكنك الاتصال بفريق دعم العملاء لدينا عبر قسم المساعدة في التطبيق أو عن طريق الاتصال بخط الدعم الخاص بنا.
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" id="question12" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question12" class="question">
+                          هل يمكنني طلب نوع معين من السيارة؟
+                        </label>
+                        <div class="answers">
+                          نعم، يمكنك اختيار نوع السيارة المفضل لديك (مثل سيارة سيدان، سيارة دفع رباعي، شاحنة صغيرة) عند حجز رحلتك.
+                        </div>
+                      </div>
+                  </div>
+              </div>
+        
+
+    </section>
+
+        <!--===== APP =======-->
+        <section class="app section bd-container">
+            <div class="app__container bd-grid">
+                <div class="app__data">
+                    <span class="section-subtitle app__initial">تطبيق الجوال للعملاء</span>
+                    <h2 class="section-title app__initial section-subtitle">التطبيق متوفر</h2>
+                    <p class="app__description"> استكشف تطبيقنا لمشاركة الرحلات للحجوزات السريعة،
+                                                طلبات الطعام، تتبع التوصيل الحي، والمزيد. قم بالتنزيل الآن!</p>
+                    <div class="app__stores">
+                        <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
+                        <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                    </div>
+                </div>
+
+                <img src="assets/img/movil-app.jpeg" alt="" class="app__img">
+            </div>
+        </section>
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">لنتحدث</span>
+                    <h2 class="section-title contact__initial">تواصل معنا</h2>
+                    <p class="contact__description"> إذا كنت ترغب في حجز رحلة مع خدمات التنقل iDriver، ببساطة تواصل معنا، وسنساعدك على الفور من خلال خدمة العملاء لدينا.</p>
+                </div>
+
+                <div class="contact__button">
+                    <a href="https://wa.me/+97471309578" class="button">أرسل رسالة</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">تقنية iDriver</a>
+                <span class="footer__description">استمتع بالتجربة الراقية للنقل معنا.</span>
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100063491145934" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">خدماتنا</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">رحلات الأعمال</a></li>
+                    <li><a href="#" class="footer__link">خدمة النقل المجانية</a></li>
+                    <li><a href="#" class="footer__link">دعم على مدار الساعة</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">روابط سريعة</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">الرئيسية</a></li>
+                    <li><a href="#" class="footer__link">معلومات عنا</a></li>
+                    <li><a href="#" class="footer__link">اتصل بنا</a></li>
+                    <li><a href="#" class="footer__link">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">اتصل بنا</h3>
+                <ul>
+                    <li>+97471309578</li>
+                    <li>info@idriver.com</li>
+                    <li>الدوحة، قطر</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2024 تقنية iDriver. كل الحقوق محفوظة.</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
